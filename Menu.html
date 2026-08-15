@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image Overlay</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            /* Full-screen background image */
+            background-image: url("https://theironpigbbq.com/TIPMenu.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            /* Center the foreground image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+        }
+
+        .foreground {
+            /* Image remains at its actual dimensions */
+			  display: block;
+              max-width:830px;
+              max-height:495px;
+              width: auto;
+              height: auto;              
+            display: block;
+		    border: 3px solid white;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img
+        class="foreground"
+        src="https://theironpigbbq.com/menu.jpg"
+        alt=""
+    >
+
+</body>
+</html>
