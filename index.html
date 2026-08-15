@@ -12,7 +12,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
+    }    
 
     /* Overall page layout */
     body {
@@ -70,8 +70,8 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    /* Footer styling */
-    footer {
+    /* Footer styling */   
+footer {
       background-color: #000000;
       color: white;
       text-align: center;
@@ -86,20 +86,41 @@
         flex-direction: column;
       }
     }
+	
+#backing {
+	vertical-align: middle;
+	margin: 0;
+	overflow: hidden;
+}
+#backing svg { 
+	display: inline-block;
+	position: absolute;
+	top: 0; left: 0;
+}
+
+
   </style>
 </head>
-<body>
+<body> 
 
 <table>
 <tr>
 <td>
-  <img src="TIPBBQ.png">
+ <figure id='backing'>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 2504" preserveAspectRatio="xMinYMin meet" >
+    	<image width="1280" height="2504" xlink:href="https://theironpigbbq.com/TIPBBQ.png">
+    	</image>
+  <a xlink:href="https://www.facebook.com/IronPigBBQue"><rect x="800" y="80" width="350" height="33" fill="#fff" opacity="0" /></a>
+  <a xlink:href="https://theironpigbbq.com/menu.jpg"><rect x="80" y="840" width="280" height="65" fill="#fff" opacity="0" /></a>
+  <a xlink:href="https://maps.app.goo.gl/nxdHH6ChrtzsfuMi8"><circle cx="125" cy="2271" r="50" fill="#fff" opacity="0"/></a>
+      	</svg>
+      </figure> 	   
 </td>
 </tr>
 </table>
 
   <footer>
-    © 2026 The Iron Pig BBQ | All rights reserved.
+    
   </footer>
 
 </body>
